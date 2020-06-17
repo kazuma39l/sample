@@ -55,6 +55,15 @@ radio.onReceivedNumber(function (receivedNumber) {
             basic.showIcon(IconNames.Angry)
         }
     }
+    if (じゃんけん1 == 1 && (じゃんけん1 == 2 && じゃんけん1 == 3)) {
+        if (じゃんけん1 == 1) {
+            basic.showIcon(IconNames.Asleep)
+        } else if (じゃんけん1 == 2) {
+            basic.showIcon(IconNames.Asleep)
+        } else {
+            basic.showIcon(IconNames.Asleep)
+        }
+    }
 })
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.SmallSquare)
