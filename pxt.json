@@ -1,5 +1,5 @@
 {
-    "name": "カカオ",
+    "name": "じゃんけんゲーム",
     "description": "",
     "dependencies": {
         "core": "*",
