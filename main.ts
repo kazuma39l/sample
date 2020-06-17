@@ -36,7 +36,7 @@ basic.forever(function () {
                 basic.showIcon(IconNames.Angry)
             }
         }
-        if (0 == 2) {
+        if (相手の手 == 2) {
             if (じゃんけん1 == 3) {
                 basic.showIcon(IconNames.Happy)
             } else if (じゃんけん1 == 1) {
@@ -44,41 +44,41 @@ basic.forever(function () {
             }
         }
     }
-    if (0 == 3) {
+    if (相手の手 == 3) {
         if (じゃんけん1 == 1) {
             basic.showIcon(IconNames.Angry)
         } else if (じゃんけん1 == 2) {
             basic.showIcon(IconNames.Happy)
         }
     }
-    if (0 == 1 && 0 == 2) {
+    if (相手の手 == 1 && 相手の手 == 2) {
         if (じゃんけん1 == 1) {
             basic.showIcon(IconNames.Angry)
         } else if (じゃんけん1 == 2) {
             basic.showIcon(IconNames.Happy)
         }
     }
-    if (0 == 2 && 0 == 3) {
+    if (相手の手 == 2 && 相手の手 == 3) {
         if (じゃんけん1 == 2) {
             basic.showIcon(IconNames.Angry)
         } else if (じゃんけん1 == 3) {
             basic.showIcon(IconNames.Happy)
         }
     }
-    if (0 == (0 == 1 && 0 == 3)) {
+    if (相手の手 == 1 && 相手の手 == 3) {
         if (じゃんけん1 == 1) {
             basic.showIcon(IconNames.Happy)
         } else if (じゃんけん1 == 3) {
             basic.showIcon(IconNames.Angry)
         }
     }
-    if (じゃんけん1 == 0) {
+    if (じゃんけん1 == 相手の手) {
         basic.showIcon(IconNames.Asleep)
-    } else if (じゃんけん1 == 1 && (0 == 2 && 0 == 3)) {
+    } else if (じゃんけん1 == 1 && (相手の手 == 2 && 相手の手 == 3)) {
         basic.showIcon(IconNames.Asleep)
-    } else if (じゃんけん1 == 2 && (0 == 1 && 0 == 3)) {
+    } else if (じゃんけん1 == 2 && (相手の手 == 1 && 相手の手 == 3)) {
         basic.showIcon(IconNames.Asleep)
-    } else if (じゃんけん1 == 3 && (0 == 1 && 0 == 2)) {
+    } else if (じゃんけん1 == 3 && (相手の手 == 1 && 相手の手 == 2)) {
         basic.showIcon(IconNames.Asleep)
     }
 })
