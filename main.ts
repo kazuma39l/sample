@@ -1,64 +1,56 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber == 1) {
-        if (じゃんけん1 == !(じゃんけん1 == 1 || じゃんけん1 == 2)) {
-            basic.showIcon(IconNames.Happy)
-        } else if (じゃんけん1 == 2) {
-            basic.showIcon(IconNames.Angry)
-        } else {
-            basic.showIcon(IconNames.Asleep)
+    basic.pause(1000)
+    if (じゃんけん1 == receivedNumber) {
+        basic.showIcon(IconNames.Asleep)
+        if (receivedNumber == !(receivedNumber == 1 || receivedNumber == 2)) {
+            if (じゃんけん1 == 1) {
+                basic.showIcon(IconNames.Happy)
+            } else if (じゃんけん1 == 2) {
+                basic.showIcon(IconNames.Angry)
+            }
         }
-    }
-    if (receivedNumber == !(じゃんけん1 == 2 || じゃんけん1 == 3)) {
-        if (じゃんけん1 == 1) {
-            basic.showIcon(IconNames.Asleep)
-        } else if (じゃんけん1 == 2) {
-            basic.showIcon(IconNames.Happy)
-        } else {
-            basic.showIcon(IconNames.Angry)
+        if (receivedNumber == !(receivedNumber == 2 || receivedNumber == 3)) {
+            if (じゃんけん1 == 2) {
+                basic.showIcon(IconNames.Happy)
+            } else if (じゃんけん1 == 3) {
+                basic.showIcon(IconNames.Angry)
+            }
         }
-    }
-    if (receivedNumber == !(じゃんけん1 == 1 || じゃんけん1 == 3)) {
-        if (じゃんけん1 == 1) {
-            basic.showIcon(IconNames.Angry)
-        } else if (じゃんけん1 == 2) {
-            basic.showIcon(IconNames.Asleep)
-        } else {
-            basic.showIcon(IconNames.Happy)
+        if (receivedNumber == !(receivedNumber == 1 || receivedNumber == 3)) {
+            if (じゃんけん1 == 1) {
+                basic.showIcon(IconNames.Angry)
+            } else if (じゃんけん1 == 2) {
+                basic.showIcon(IconNames.Happy)
+            }
         }
-    }
-    if (receivedNumber == (じゃんけん1 == 1 && じゃんけん1 == 2)) {
-        if (じゃんけん1 == 1) {
-            basic.showIcon(IconNames.Angry)
-        } else if (じゃんけん1 == 2) {
-            basic.showIcon(IconNames.Happy)
-        } else {
-            basic.showIcon(IconNames.Asleep)
+        if (receivedNumber == (receivedNumber == 1 && receivedNumber == 2)) {
+            if (じゃんけん1 == 1) {
+                basic.showIcon(IconNames.Angry)
+            } else if (じゃんけん1 == 2) {
+                basic.showIcon(IconNames.Happy)
+            }
         }
-    }
-    if (receivedNumber == (じゃんけん1 == 2 && じゃんけん1 == 3)) {
-        if (じゃんけん1 == 1) {
-            basic.showIcon(IconNames.Asleep)
-        } else if (じゃんけん1 == 2) {
-            basic.showIcon(IconNames.Angry)
-        } else {
-            basic.showIcon(IconNames.Happy)
+        if (receivedNumber == (receivedNumber == 2 && receivedNumber == 3)) {
+            if (じゃんけん1 == 2) {
+                basic.showIcon(IconNames.Angry)
+            } else if (じゃんけん1 == 3) {
+                basic.showIcon(IconNames.Happy)
+            }
         }
-    }
-    if (receivedNumber == (じゃんけん1 == 1 && じゃんけん1 == 3)) {
-        if (じゃんけん1 == 1) {
-            basic.showIcon(IconNames.Happy)
-        } else if (じゃんけん1 == 2) {
-            basic.showIcon(IconNames.Asleep)
-        } else {
-            basic.showIcon(IconNames.Angry)
+        if (receivedNumber == (receivedNumber == 1 && receivedNumber == 3)) {
+            if (じゃんけん1 == 1) {
+                basic.showIcon(IconNames.Happy)
+            } else if (じゃんけん1 == 3) {
+                basic.showIcon(IconNames.Angry)
+            }
         }
-    }
-    if (じゃんけん1 == 1 && (じゃんけん1 == 2 && じゃんけん1 == 3)) {
-        if (じゃんけん1 == 1) {
+        if (じゃんけん1 == receivedNumber) {
             basic.showIcon(IconNames.Asleep)
-        } else if (じゃんけん1 == 2) {
+        } else if (じゃんけん1 == 1 && (receivedNumber == 2 && receivedNumber == 3)) {
             basic.showIcon(IconNames.Asleep)
-        } else {
+        } else if (じゃんけん1 == 2 && (receivedNumber == 1 && receivedNumber == 3)) {
+            basic.showIcon(IconNames.Asleep)
+        } else if (じゃんけん1 == 3 && (receivedNumber == 1 && receivedNumber == 2)) {
             basic.showIcon(IconNames.Asleep)
         }
     }
