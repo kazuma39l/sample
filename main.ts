@@ -1,8 +1,6 @@
-/**
- */
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber == !(じゃんけん1 == 1 || じゃんけん1 == 2)) {
-        if (じゃんけん1 == 1) {
+    if (receivedNumber == 1) {
+        if (じゃんけん1 == !(じゃんけん1 == 1 || じゃんけん1 == 2)) {
             basic.showIcon(IconNames.Happy)
         } else if (じゃんけん1 == 2) {
             basic.showIcon(IconNames.Angry)
